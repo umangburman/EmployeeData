@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Employee Data</string>
+    <string name="empployee_id">Empployee ID :</string>
+    <string name="no_data">No Employee Data Was Found, Please try again.</string>
+    <string name="employee_details">Employee Details</string>
+    <string name="employee_name">Employee Name</string>
+    <string name="employee_age">Employee Age</string>
+    <string name="employee_salary">Employee Salary</string>
+</resources>

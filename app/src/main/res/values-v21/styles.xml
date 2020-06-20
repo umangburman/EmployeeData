@@ -1,0 +1,74 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="actionBarSize">@dimen/actionbar_height</item>
+        <item name="android:actionMenuTextColor">@color/White</item>
+
+        <!-- Custom Theme Elements -->
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+        <item name="android:windowAnimationStyle">@style/ActivityAnimation</item>
+        <item name="android:windowDisablePreview">true</item>
+
+    </style>
+
+    <!-- Animating Activities While Switching-->
+    <style name="ActivityAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <!-- Overlays -->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Toolbar Theme -->
+    <style name="myToolbarTHeme">
+        <!-- Style For Toolbar -->
+        <item name="toolbarStyle">@style/CustomToolbarStyle</item>
+        <item name="toolbarNavigationButtonStyle">@style/CustomToolbarButtonStyle</item>
+        <item name="actionOverflowButtonStyle">@style/CustomOverflowButton</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="actionModeStyle">@style/CustomActionMode</item>
+        <item name="actionModeCloseButtonStyle">@style/CustomModeButtonStyle</item>
+        <item name="android:colorControlNormal">@color/White</item>
+    </style>
+
+    <!-- Custom Toolbar -->
+    <style name="CustomToolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="maxButtonHeight">48dp</item>
+        <item name="android:paddingLeft">@dimen/toolbar_horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/toolbar_horizontal_padding</item>
+        <item name="contentInsetStart">@dimen/first_keyline</item>
+    </style>
+
+    <style name="CustomToolbarButtonStyle" parent="Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:minWidth">48dp</item>
+    </style>
+
+    <style name="CustomOverflowButton" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+    </style>
+
+    <style name="CustomActionMode" parent="Widget.AppCompat.ActionMode">
+        <item name="android:paddingLeft">@dimen/toolbar_horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/toolbar_horizontal_padding</item>
+    </style>
+
+    <style name="CustomModeButtonStyle" parent="Widget.AppCompat.ActionButton.CloseMode">
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+</resources>
